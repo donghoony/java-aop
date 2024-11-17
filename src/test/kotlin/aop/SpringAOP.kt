@@ -114,7 +114,7 @@ class SpringAOP : FreeSpec({
 
                 val proxy = proxyFactory.proxy as World
 
-                // proxy.message를 호출하면 HelloAfterReturningAdvice의 before 메서드가 실행됩니다.
+                // proxy.message를 호출하면 HelloAfterReturningAdvice의 afterReturning 메서드가 실행됩니다.
                 // 콘솔창 메시지를 확인하세요.
                 proxy.message shouldBe ""
             }
